@@ -1,9 +1,24 @@
-<h3>Angular2 Seed</h3>
-<div>
-	<a [routerLink]="['/Home']">Home</a>
-	<a [routerLink]="['/About']">About</a>
-	<a [routerLink]="['/RepoBrowser/RepoList', {org: 'angular'}]">Github Repos</a>
+<div class="container">
+  <header class="row">
+    <div class="header-logo col-md-6">
+      <a href="/"><img src="/assets/images/shc_logo.png" /></a>
+    </div>
+  </header>
+  <div id="content">
+    <div class="content-header">
+      <h6>Online Application Process</h6>
+      <nav>
+          <a class="bc-nav-item active" [routerLink]="['/Welcome']">Welcome</a>
+          <a class="bc-nav-item" [routerLink]="['/SelectionCriteria']">Selection Criteria</a>
+          <a class="bc-nav-item" [routerLink]="['/Recommendations']">Recommendations</a>
+          <a class="bc-nav-item" [routerLink]="['/About']">About</a>
+          <a class="bc-nav-item" [routerLink]="['/RepoBrowser/RepoList', {org: 'angular'}]">Github Repos</a>
+      </nav>
+    </div>
+    <div class="content-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
-<div>
-	<router-outlet></router-outlet>
-</div>
+
+

@@ -1,0 +1,18 @@
+<h4>Recommendation Nominations</h4>
+
+<p>The Schreyer Honors College requires recommendations from two teachers, with an optional third recommendation from the person of your choosing, and an optional counselor recommendation. All recommendations for the Schreyer Honors College application must be submitted through the process below. We do not accept emails or hard copies of letters of recommendation, or those submitted through Naviance.</p>
+
+<p class="highlight">Your application will only be reviewed if we receive the minimum two teacher recommendations by January 20. It is your responsibility to follow up with your recommenders to ensure timely receipt.</p>
+
+<p>In the blanks below, please enter the names and email addresses for those individuals whom you wish to complete these recommedations for you. An email will be sent to each recommender with instructions of how to complete the on line recommendations. Please check with your recommenders first, to make sure that they are willing to complete online recommendations, and that their email account will accept confirmation messages from Penn State</p>
+
+<div class="row">
+  <div *ngFor="#recommendation of recommendationService.recommendations" class="col-md-3">
+    <div class="recommendation-item form-group">
+      {{recommendation.recommendation_type}}
+      <input type="text" [(ngModel)]="recommendation.first_name" placeholder="First Name" class="form-control" required/>
+      <input type="text" [(ngModel)]="recommendation.last_name" placeholder="Last Name" class="form-control" required/>
+      <input type="text" [(ngModel)]="recommendation.email" placeholder="example@domain.com" class="form-control" required/>
+    </div>
+  </div>
+</div>

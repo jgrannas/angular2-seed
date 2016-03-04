@@ -1,0 +1,49 @@
+body {
+  background: #262C3A;
+  color:#FFF;
+  background: url(assets/images/schreyer_medal_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  h3 {
+    color:#FFF;
+  }
+  a {
+    color:#FFF;
+  }
+}
+.header-logo {
+  margin:40px 0 40px 20px;
+}
+#content {
+  background:#222732;
+  background:rgba(34, 39, 50, 0.8);
+  border:1px solid #666666;
+  border:1px solid rgba(255,255,255,0.3);
+  .content-header {
+    h6 {
+      padding:20px 60px 10px 60px;
+    }
+    nav {
+      padding:0 60px;
+      background:rgba(255,255,255,0.1);
+      .bc-nav-item {
+        display:inline-block;
+        padding:10px 30px;
+        font-size:12px;
+        border-right:1px solid rgba(255,255,255,0.1);
+        &:first-child {
+          border-left:1px solid rgba(255,255,255,0.1);
+        }
+        &.active {
+          background:rgba(255,255,255,0.1);
+          font-weight:700;
+        }
+      }
+    }
+  }
+  .content-container {
+    padding:40px 60px;
+  }
+}

@@ -1,0 +1,12 @@
+.recommendation-item {
+  padding:20px;
+  background:#273546;
+}
+.recommendation-item input {
+  margin-bottom:5px;
+  background:#232834;
+  border:none;
+  color:#FFF;
+  color:rgba(255,255,255,0.6);
+  padding:3px 5px;
+}
